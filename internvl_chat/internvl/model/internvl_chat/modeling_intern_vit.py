@@ -244,7 +244,7 @@ class InternAttention(nn.Module):
         return outs
 
     def forward(self, hidden_states: torch.Tensor) -> torch.Tensor:
-        x = self._naive_attn(hidden_states) if not self.use_flash_attn else self._flash_attn(hidden_states)
+        x = self._naive_attn(hidden_states) 
         return x
 
 
