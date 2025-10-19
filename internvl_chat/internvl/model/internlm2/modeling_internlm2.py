@@ -616,7 +616,7 @@ class InternLM2FlashAttention2(InternLM2Attention):
 
 INTERNLM2_ATTENTION_CLASSES = {
     'eager': InternLM2Attention,
-    'flash_attention_2': InternLM2FlashAttention2,
+    'flash_attention_2': InternLM2Attention,
 }
 
 
